@@ -10,13 +10,13 @@ pipeline {
    environment {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
-        NEXUS_URL = "139.177.192.139:8081"
-        NEXUS_REPOSITORY = "utrains-nexus-pipeline"
-        NEXUS_CREDENTIAL_ID = "nexus-user-credentials"
+        NEXUS_URL = "34.226.233.99:8081"
+        NEXUS_REPOSITORY = "utrains-nexus-registry"
+        NEXUS_CREDENTIAL_ID = "jenkins-user"
 
         imageName = "fastfood"
         registryCredentials = "nexus-user-credentials"
-        registry = "139.177.192.139:8085/repository/utrains-nexus-registry/"
+        registry = "34-226-233-99.compute-1.amazonaws.com:8085/repository/utrains-nexus-registry"
         dockerImage = ''
     }
 
